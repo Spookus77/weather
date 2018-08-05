@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="content">
+<h1>Weather</h1>
+<p>This app will use your current location and dispaly the current weather.</p>
+<input (keyup.enter)="checkWeather()" class="palindrome-input" type="text" placeholder="Type location here" [(ngModel)]="locationText">
+<button (click)="checkWeather()" class="btn btn-primary btn-edge">Submit</button>
+<h3>{{currentTemp}}°</h3>
+  </div>
+</div>
